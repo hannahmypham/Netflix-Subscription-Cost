@@ -1,4 +1,14 @@
---Look at countries with highest number of movies - Malaysia with 2387 movies
+--Look at countries with highest cost for basic plan - Liechtenstein and Switzerland
+SELECT *
+FROM Netflix_subscription_fee.tables
+WHERE Monthly_Cost_Basic = (SELECT Max(Monthly_Cost_Basic) FROM Netflix_subscription_fee.tables)
+
+--Look at countries with lowest cost for basic plan - Liechtenstein and Switzerland
+SELECT *
+FROM Netflix_subscription_fee.tables
+WHERE Monthly_Cost_Basic = (SELECT Min(Monthly_Cost_Basic) FROM Netflix_subscription_fee.tables)
+
+--Look at countries with highest number of movies - Malaysia with 2387
 SELECT *
 FROM Netflix_subscription_fee.tables
 WHERE No_of_Movies = (SELECT Max(No_of_Movies) FROM Netflix_subscription_fee.tables)
@@ -8,12 +18,12 @@ SELECT *
 FROM Netflix_subscription_fee.tables
 WHERE No_of_Movies = (SELECT MIN(No_of_Movies) FROM Netflix_subscription_fee.tables)
 
---Look at countries with largest library  - Czechia with 7325 items
+--Look at countries with largest library  - Czechia with 7325
 SELECT *
 FROM Netflix_subscription_fee.tables
 WHERE Total_Library_Size = (SELECT Max(Total_Library_Size) FROM Netflix_subscription_fee.tables)
 
---Look at countries with smallest library  - Czechia with 2274 items
+--Look at countries with smallest library  - Crotia with 2274
 SELECT *
 FROM Netflix_subscription_fee.tables
 WHERE Total_Library_Size = (SELECT Min(Total_Library_Size) FROM Netflix_subscription_fee.tables)
