@@ -25,6 +25,11 @@ The columns include: Country, Total library size, Number of movies, Number of TV
 4. Larger libray size doesn't correlate with subscription cost, since Switzerland pays the highest cost but doesn't have largest library size or highest number of movies.
 5. After visualizing data in Tableau, I found out that many countries pay the same price for basic plans but different prices for standard and premium plans. It could be due to Netflix wants to make basic plan more affordable and target customers to start using their service. 
 
+## Recommendations
+1. Lower standard subscription cost or equalize same costs for all countries instead of charging additional for standard and premiums plans in some countries.
+2. Dataset shows that most countries using Netflix are European countries. Netflix could expand more service in the future in other continents. 
+3. For further analysis, more data needs to be collects such as: number of subscriptions in each country, customers ratings, turnover rates...
+
 ## Tools used during analysis
 1. Aggregate functions: Min, Max, Average
 2. Subquery and CTE
